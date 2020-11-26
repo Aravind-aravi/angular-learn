@@ -1,0 +1,33 @@
+.movie-card{
+  width: 17%;
+
+}
+.movie-title{
+  font-size: 19px;
+  font-weight: 600;
+}
+.movie-release-year{
+  color:chartreuse;
+  font-size: 17px;
+}
+.movie-details{
+  color: rgb(129,11,11);
+  font-size: 13px;
+  font-weight: 600;
+
+}
+.stars{
+  color: rgb(3,48,85);
+  font-size: 13px;
+  font-weight: 600;
+
+}
+.float-left{
+  float: left;
+  padding: 20px;
+
+}
+.movie-image{
+  height: 5cm;
+  width: 5cm;
+}

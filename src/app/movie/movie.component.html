@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="movie-card">
+    <div ><img src="{{movie.poster}}" class="movie-image" > </div>
+    <div>
+      <span class="movie-title">{{movie.title}}</span>
+      <span class="movie-release-year">&nbsp; ({{movie.releaseDate|date:'yyyy'}})</span>
+      <div>
+        <span class="movie-details">
+          {{movie.durationInMinutes}} mins |
+          {{movie.genre.name}}|
+          {{movie.releaseDate | date}}|
+          {{movie.boxOffice| currency}}
+        </span>
+      </div>
+      <div class="stars">Stars:
+        <span *ngFor="let star of movie.stars">
+          {{star.firstName}} {{star.lastName}},
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
